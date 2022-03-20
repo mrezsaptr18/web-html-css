@@ -7,4 +7,4 @@ Tampilan web ini dibuat oleh:
 4. Muhammad Kurnia Sani
 5. Muhammad Arsy Ardyansyah
 
-15 Maret 2022 - Digitalent Kominfo - Front End Developer
+15 Maret 2022 - Digitalent Kominfo - Front End Developer - A17
