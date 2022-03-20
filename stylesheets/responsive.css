@@ -1,0 +1,196 @@
+/* Untuk Tablet */
+@media all and (max-width: 1024px) {
+    /* Header */
+
+    .header .container {
+        justify-content: center;
+    }
+
+    .header-right .menu-link {
+        display: none;
+    }
+
+    .header-left .logo {
+        height: 2.5rem;
+    }
+
+    .harmburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Hero Image */
+
+    .background-menu {
+        padding: 0 1.25rem;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .greeting h1,
+    .greeting h2,
+    .greeting p {
+        letter-spacing: 0.1rem;
+    }
+
+    .greeting h1,
+    .greeting h2 {
+        font-size: 2rem;
+    }
+
+    .greeting h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .greeting p {
+        font-size: 0.9rem;
+        line-height: 1.25rem;
+    }
+
+    /* Content */
+
+    .contents {
+        padding: 2rem;
+    }
+
+    .content-menu {
+        padding: 2rem 1rem;
+    }
+
+    .gambar-menu {
+        height: 10rem;
+    }
+
+    #order-button {
+        font-size: .8rem;
+        height: 2.25rem;
+        width: 9rem;
+    }
+
+    /* Footer */
+
+    .footer-container,
+    .upper-footer,
+    .footer-left,
+    .footer-right,
+    .main-footer,
+    .footer-links,
+    .copyright {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 1rem 0;
+    }
+
+    .upper-footer,
+    .main-footer {
+        margin: 1rem 0;
+    }
+
+    .social-media,
+    .footer-left h5 {
+        margin: 0.5rem 0;
+    }
+
+    .social-media a img {
+        height: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .footer-left h5,
+    .footer-right h5 {
+        text-align: center;
+    }
+
+    .footer-logo img {
+        height: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .footer-links {
+        margin: 1rem 0;
+    }
+
+    .footer-links li,
+    .copyright li {
+        margin: 0.25rem 0;
+    }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 576px) {
+    /* Header */
+
+    .header-left .logo {
+        height: 2.25rem;
+    }
+
+    .harmburger-menu {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 2rem;
+        height: 1.75rem;
+    }
+
+    .harmburger-menu .bar {
+        height: 0.3rem;
+    }
+
+    /* Hero Image */
+
+    .background-menu {
+        height: 35rem;
+    }
+
+    .greeting h1,
+    .greeting h2 {
+        font-size: 1.25rem;
+    }
+
+    .greeting h2 {
+        margin-bottom: 1rem;
+    }
+
+    .greeting p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    /* Footer */
+
+    .social-media,
+    .footer-left h5 {
+        margin: 0.25rem 0;
+    }
+
+    .social-media {
+        margin: 0.25rem;
+    }
+
+    .footer-right h5 {
+        font-size: 0.75rem;
+    }
+
+    .footer-logo img {
+        height: 2rem;
+    }
+
+    .footer-links,
+    .copyright {
+        margin: 0.5rem 0;
+    }
+
+    .footer-links li,
+    .copyright li {
+        margin: 0.2rem 0;
+    }
+
+    .footer-links li a,
+    .copyright a {
+        font-size: 0.8rem;
+    }
+}

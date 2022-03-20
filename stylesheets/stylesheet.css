@@ -1,0 +1,324 @@
+/* root element */
+:root {
+    /* satuan rem (root font element) */
+    font-size: 16px; /* 1 rem = 16px */
+}
+
+/* Reset tampilan umum elemen HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hapus gaya pada elemen anchor */
+a {
+    text-decoration: none; /*menghilangkan garis bawah*/
+    display: inline-block;
+}
+
+/* hapus gaya pada elemen li */
+li {
+    list-style: none; /* menghilangkan bullet pada list */
+}
+
+/* ubah box model dari elemen figure */
+figure {
+    display: block;
+}
+
+/* Header */
+
+.header {
+    height: 5rem;
+    width: 100%;
+    background-color: rgba(250, 184, 42, 1);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0.3rem 0.8rem hsla(0, 0%, 0%, 0.2);
+}
+
+.header .container,
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.header-left {
+    justify-content: center;
+}
+
+.logo {
+    display: inline-block;
+    height: 3.25rem;
+}
+
+.header-right .menu-link {
+    line-height: 5rem;
+    padding: 0 1.5rem;
+    color: hsl(0, 0%, 15%);
+    display: inline-block;
+}
+
+/* menu saat disorot */
+.menu-link:hover {
+    color: hsl(0, 0%, 20%);
+    background-color: hsla(41, 95%, 47%, 1);
+}
+
+.harmburger-menu {
+    display: none;
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.25rem;
+}
+
+.harmburger-menu .bar {
+    display: block;
+    height: .4rem;
+    border-radius: .2rem;
+    width: 100%;
+    background-color: white;
+}
+
+/* Main Content */
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.background-menu {
+    width: 100%;
+    height: 40rem;
+
+    /* memberikan background gambar pada jumbotron/hero image */
+    background-image: url(../images/cakes/breads.jpg);
+
+    /* mengatur posisi gambar pada jumbotron/hero image */
+    background-size: cover; /* agar gambar memenuhi luas elemen */
+    background-repeat: no-repeat; /* agar gambar tidak mengalami pengulangan */
+    background-position: center; /* meletakkan background ditengah */
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greeting h1,
+.greeting h2,
+.greeting p {
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.greeting h1,
+.greeting h2 {
+    font-size: 3rem;
+}
+
+.greeting h2 {
+    margin-bottom: 2rem;
+}
+
+.greeting p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 500;
+}
+
+/* Content */
+
+.contents {
+    width: 100%;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.content-menu {
+    padding: 3rem 1rem;
+
+    /* mengatur posisi .content-item */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 4rem 1rem; /* memberikan jarak diantara .content-item atas-bawah 3 rem, kanan-kiri 1rem */
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.3rem 0.75rem hsla(0, 0%, 0%, 0.1);
+    transition: ease 0.25s;
+}
+
+.content-block:hover {
+    box-shadow: 0 0rem 1rem hsla(0, 0%, 0%, 0.25);
+}
+
+.content-block h4 {
+    text-transform: capitalize;
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.content-block p {
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+}
+
+.gambar-menu {
+    display: block;
+    height: 11rem;
+    border-radius: 0.25rem 0.25rem 0 0; /* sudut bagian atas kanan-kiri tumpul .5rem */
+}
+
+#order-button {
+    display: block;
+    height: 2.5rem;
+    width: 10rem;
+    margin: 1rem 0 2rem 0;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    border: 0.8rem solid hsl(46, 100%, 75%);
+    box-shadow: 0 0.45rem hsl(46, 100%, 48%);
+    background-color: hsl(46, 100%, 75%);
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#order-button:hover {
+    background-color: hsl(46, 100%, 67%);
+    border: 0.8rem solid hsl(46, 100%, 67%);
+}
+
+#order-button:active {
+    position: relative;
+    top: 0.5rem;
+    box-shadow: none;
+}
+
+/* Footer */
+
+.footer,
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    justify-content: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    background-color: rgb(255, 217, 92);
+}
+
+.footer-container {
+    flex-direction: column;
+    width: 90%;
+}
+
+.upper-footer,
+.footer-bar {
+    width: 90%;
+}
+
+.upper-footer,
+.footer-left,
+.footer-left .social-media,
+.footer-left .social-media li a,
+.main-footer,
+.footer-links,
+.footer-logo,
+.copyright {
+    display: flex;
+    align-items: center;
+}
+
+.upper-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-media a img {
+    height: 1.25rem;
+    margin: 0 0.5rem;
+}
+
+.footer-left h5 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #333;
+}
+
+.footer-logo img {
+    display: inline-block;
+    height: 3rem;
+}
+
+.footer-right h5 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: right;
+    color: #333;
+}
+
+.footer-bar {
+    height: 0.1rem;
+    background-color: #333;
+}
+
+.main-footer {
+    flex-direction: column;
+    width: 35%;
+}
+
+.footer-links {
+    text-transform: capitalize;
+    margin: 1rem 0;
+    width: 120%;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    color: #333;
+}
+
+.copyright {
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.copyright li,
+.copyright a {
+    display: inline-block;
+}
+
+.copyright a {
+    color: #333;
+}
